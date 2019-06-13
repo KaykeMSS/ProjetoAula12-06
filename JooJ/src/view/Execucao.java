@@ -2,14 +2,14 @@ package view;
 
 import javax.swing.JOptionPane;
 import model.Professor;
-
+//teste
 public class Execucao {
 
 		public static void main(String[] args) {
 			Professor professor = new Professor();
 			
 			professor.setNome(JOptionPane.showInputDialog(null,"Nome: "));
-			professor.setEndereco(JOptionPane.showInputDialog(null,"Endereço: "));
+			professor.setEndereco(JOptionPane.showInputDialog(null,"EndereÃ§o: "));
 			professor.setBairro(JOptionPane.showInputDialog(null,"Bairro: "));
 			professor.setCep(Integer.parseInt(JOptionPane.showInputDialog(null,"Cep: ")));
 			professor.setCidade(JOptionPane.showInputDialog(null,"Cidade: "));
@@ -18,7 +18,7 @@ public class Execucao {
 			professor.setCpf(Long.parseLong(JOptionPane.showInputDialog(null,"CPF: ")));
 			
 			try {
-				int dis = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantas disciplinas você possui?"));
+				int dis = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantas disciplinas vocÃª possui?"));
 				String disciplinas[] = new String[100];
 				for (int i = 0; i<dis; i++) {
 					disciplinas[i] = JOptionPane.showInputDialog(null, "Digite a disciplina " + i);
@@ -29,7 +29,7 @@ public class Execucao {
 				e.printStackTrace();
 			}
 			try {
-				int cur = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantos cursos você possui?"));
+				int cur = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantos cursos vocÃª possui?"));
 				String cursos[] = new String[100];
 				for (int i = 0; i<cur; i++) {
 					cursos[i] = JOptionPane.showInputDialog(null, "Digite o curso " + i);
